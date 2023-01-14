@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  
+  api:
+    container_name: languagesloth_api
+    build: ./LanguageSloth_API
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/languagesloth_api/files
+
+
+  frontend:
+    container_name: languagesloth_frontend
+    build: ./LanguageSloth_Frontend
+    ports:
+      - "19006:19006"
+      - "19001:19001"
+      - "19002:19002"
+    volumes:
+      - .:/languagesloth_frontend/files
+
+
+  tts:
+    container_name: languagesloth_tts
+    build: ./TTS
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/languagesloth_tts/files
