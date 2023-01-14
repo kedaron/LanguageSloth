@@ -7,7 +7,6 @@ services:
     ports:
       - "8080:8080"
 
-
   frontend:
     container_name: languagesloth_frontend
     build: ./LanguageSloth_Frontend
@@ -15,7 +14,6 @@ services:
       - "19006:19006"
       - "19001:19001"
       - "19002:19002"
-
 
   tts:
     container_name: languagesloth_tts
