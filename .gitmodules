@@ -1,0 +1,9 @@
+[submodule "LanguageSloth_Frontend"]
+	path = LanguageSloth_Frontend
+	url = https://github.com/antlanger/LanguageSloth_Frontend.git
+[submodule "LanguageSloth_API"]
+	path = LanguageSloth_API
+	url = https://github.com/antlanger/LanguageSloth_API.git
+[submodule "TTS"]
+	path = TTS
+	url = https://github.com/Raavgo/TTS.git
