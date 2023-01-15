@@ -20,3 +20,8 @@ services:
     build: ./TTS
     ports:
       - "5000:5000"
+    volumes:
+      - languagesloth_tts:/root/.local/share/tts/
+
+volumes:
+  languagesloth_tts:
