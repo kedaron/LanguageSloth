@@ -7,6 +7,3 @@
 [submodule "TTS"]
 	path = TTS
 	url = https://github.com/Raavgo/TTS.git
-[submodule "LibreTranslate"]
-	path = LibreTranslate
-	url = https://github.com/LibreTranslate/LibreTranslate.git
