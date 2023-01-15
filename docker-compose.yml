@@ -19,9 +19,15 @@ services:
     container_name: languagesloth_tts
     build: ./TTS
     ports:
-      - "5000:5000"
+      - "5001:5001"
     volumes:
       - languagesloth_tts:/root/.local/share/tts/
+
+  libretranslate:
+    container_name: languagesloth_libretranslate
+    image: libretranslate/libretranslate:latest
+    ports:
+      - "5000:5000"
 
 volumes:
   languagesloth_tts:
