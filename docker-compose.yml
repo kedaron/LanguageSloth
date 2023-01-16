@@ -25,7 +25,7 @@ services:
 
   libretranslate:
     container_name: languagesloth_libretranslate
-    image: libretranslate/libretranslate:latest
+    image: libretranslate/libretranslate:v1.3.8
     ports:
       - "5000:5000"
 
