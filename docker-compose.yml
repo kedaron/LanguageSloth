@@ -23,11 +23,12 @@ services:
     volumes:
       - languagesloth_tts:/root/.local/share/tts/
 
-  libretranslate:
-    container_name: languagesloth_libretranslate
-    image: libretranslate/libretranslate:v1.3.8
+  lingva:
+    container_name: languagesloth_lingva
+    image: thedaviddelta/lingva-translate:latest
+    restart: unless-stopped
     ports:
-      - "5000:5000"
+      - 3000:3000
 
 volumes:
   languagesloth_tts:
