@@ -1,4 +1,5 @@
 # LanguageSloth
+Development project of Alexander Dickbauer, Antonia Langer and Matthias Chory
 
 To run the application you have to build 
 
